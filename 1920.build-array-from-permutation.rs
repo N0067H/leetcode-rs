@@ -9,13 +9,7 @@ struct Solution;
 // @lc code=start
 impl Solution {
     pub fn build_array(nums: Vec<i32>) -> Vec<i32> {
-        let mut result = Vec::with_capacity(nums.len());
-
-        for &i in &nums {
-            result.push(nums[i as usize]);
-        }
-
-        result
+        nums.iter().map(|&i| nums[i as usize]).collect()
     }
 }
 // @lc code=end
