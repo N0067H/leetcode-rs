@@ -1,0 +1,14 @@
+/*
+ * @lc app=leetcode id=1929 lang=rust
+ *
+ * [1929] Concatenation of Array
+ */
+struct Solution;
+
+// @lc code=start
+impl Solution {
+    pub fn get_concatenation(nums: Vec<i32>) -> Vec<i32> {
+        nums.repeat(2)
+    }
+}
+// @lc code=end
