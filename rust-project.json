@@ -1,0 +1,12 @@
+{
+  "sysroot": "/home/noobth/.rustup/toolchains/stable-x86_64-unknown-linux-gnu",
+  "sysroot_src": "/home/noobth/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library",
+  "crates": [
+    {
+      "display_name": "leetcode_1920",
+      "root_module": "1920.build-array-from-permutation.rs",
+      "edition": "2021",
+      "deps": []
+    }
+  ]
+}
