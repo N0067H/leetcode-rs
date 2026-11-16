@@ -3,8 +3,14 @@
   "sysroot_src": "/home/noobth/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library",
   "crates": [
     {
-      "display_name": "leetcode_1920",
-      "root_module": "1920.build-array-from-permutation.rs",
+      "display_name": "leetcode_1480_running_sum_of_1d_array",
+      "root_module": "/home/noobth/dev/leetcode-rs/1480.running-sum-of-1d-array.rs",
+      "edition": "2021",
+      "deps": []
+    },
+    {
+      "display_name": "leetcode_1920_build_array_from_permutation",
+      "root_module": "/home/noobth/dev/leetcode-rs/1920.build-array-from-permutation.rs",
       "edition": "2021",
       "deps": []
     }

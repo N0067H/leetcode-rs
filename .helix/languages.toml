@@ -3,8 +3,12 @@ name = "rust"
 roots = ["rust-project.json"]
 
 [language-server.rust-analyzer.config]
-linkedProjects = ["rust-project.json"]
 checkOnSave = true
+
+[language-server.rust-analyzer.config.workspace.discoverConfig]
+command = ["python3", "/home/noobth/dev/leetcode-rs/scripts/rust-project.py", "{arg}"]
+filesToWatch = ["*.rs"]
+progressLabel = "LeetCode targets"
 
 [language-server.rust-analyzer.config.check]
 overrideCommand = ["rustc", "--crate-name", "leetcode", "--crate-type", "lib", "--edition", "2021", "--emit=metadata", "--error-format=json", "-o", "/dev/null", "{saved_file}"]
