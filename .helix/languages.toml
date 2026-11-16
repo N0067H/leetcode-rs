@@ -1,0 +1,10 @@
+[[language]]
+name = "rust"
+roots = ["rust-project.json"]
+
+[language-server.rust-analyzer.config]
+linkedProjects = ["rust-project.json"]
+checkOnSave = true
+
+[language-server.rust-analyzer.config.check]
+overrideCommand = ["rustc", "--crate-name", "leetcode", "--crate-type", "lib", "--edition", "2021", "--emit=metadata", "--error-format=json", "-o", "/dev/null", "{saved_file}"]
