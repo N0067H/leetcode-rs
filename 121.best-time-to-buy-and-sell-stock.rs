@@ -12,10 +12,10 @@ impl Solution {
         let mut best = 0;
         let mut min_price = prices[0];
 
-        for price in prices {
+        prices.iter().for_each(|&price| {
             min_price = min_price.min(price);
             best = best.max(price - min_price);
-        }
+        });
 
         best
     }
